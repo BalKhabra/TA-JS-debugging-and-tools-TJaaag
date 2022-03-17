@@ -7,15 +7,15 @@
 3. Make the first test fail and look at the output
 4. After making the first test fail do you see the output of the second test?
 
-let firstName = Baljit
-let lastName = Khabra
-
-function fullName (firstName, lastName) {
-    return firstName + lastName;
+function fullName(firstName, lastName) {
+    return(`${firstName} ${lastName}`) ;
 } 
+let fullname = fullName("Baljit", "Khabra")
+console.log(fullname);
 
-let result = add(Baljit, Khabra)
-let expected = Baljit Khabra
+let result, expected;
+result = add(Baljit, Khabra)
+expected = Baljit Khabra
 
 if(result !== expected){
 Throw new Error (`${result} is not equal to ${expected}`)
@@ -31,4 +31,12 @@ Throw new Error (`${result} is not equal to ${expected}`)
 
 function totalAmount (amount, taxRate){
     return (`amount + (amount * taxRate`)
+}
+
+let result, expected;
+result = (5, 6)
+expected = 
+
+if(result !== expected){
+Throw new Error (`${result} is not equal to ${expected}`)
 }
